@@ -17,9 +17,11 @@ google script for automatically filling out email templates
 
 3. **This only has to be done once per new spreadsheet:** When finished with all pairings, click on Tools -> Script editor. Copy paste the contents of `code.gs`, filling in the following necessary fields (keep the quotes around the ID's!) and making sure to **save** after you're done. 
 
-- `var spreadSheetID = 'PAIRINGS_SHEET_ID'` on line 2. This should just be the url of the form spreadsheet
+- `var spreadSheetID = 'PAIRINGS_SHEET_ID'`
 
-- `var DEST_FOLDER = 'DESTINATION_FOLDER_ID'` on line 22
+- `var DEST_FOLDER = 'DESTINATION_FOLDER_ID'` 
+
+These are both at the very top of the file, marked with ``// !CHANGE ME!``.
 
 4. Done! When ready to generate the emails, click on the button on the template page, and wait a few minutes - the emails should pop up in your destination folder. Happy pairing : )
 
