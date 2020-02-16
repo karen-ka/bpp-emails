@@ -1,5 +1,5 @@
 function myFunction() {
-  var spreadSheetID = 'PAIRINGS_SHEET_ID'
+  var spreadSheetID = 'PAIRINGS_SHEET_ID' // !CHANGE ME!
   var ss = SpreadsheetApp.openById(spreadSheetID);
   var sheets = ss.getSheets();
   var counter = 1
@@ -19,11 +19,11 @@ function myFunction() {
     if(p1add.length < 3 && p2add.length < 3 && p1mb.length < 3 && p2mb.length < 3){ // no data
       break; // probably not valid
     }
-    var DEST_FOLDER = 'DESTINATION_FOLDER_ID'
+    var DEST_FOLDER = 'DESTINATION_FOLDER_ID' // !CHANGE ME!
     // both ON campus
     if(p1add.length < 3 && p2add.length < 3){
       var file = DriveApp.getFileById('1wif4KqdbF0T1oaqcT3zg31x5ZhTLgIc1W0njjcqAOEg');
-      var folder = DriveApp.getFolderById(DEST_FOLDER"); // INSERT the destination folder ID. Once again, this can be found in the URL once you have the folder openned in your browser
+      var folder = DriveApp.getFolderById(DEST_FOLDER);
       var copy = file.makeCopy('Pairing #' + counter, folder);
       var doc = DocumentApp.openById(copy.getId()); 
       var body = doc.getBody(); 
