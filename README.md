@@ -23,7 +23,9 @@ google script for automatically filling out email templates
 
 These are both at the very top of the file, marked with ``// !CHANGE ME!``.
 
-4. Done! When ready to generate the emails, click on the button on the template page, and wait a few minutes - the emails should pop up in your destination folder. Happy pairing : )
+4. Click the star on the pairings sheet, and then click on the three dots on the top right of that selection. Click on 'Assign Script', then type in `myFunction` and hit OK.
+
+5. Done! When ready to generate the emails, click on the button on the template page, and wait a few minutes - the emails should pop up in your destination folder. Happy pairing : )
 
 
 ### id examples
